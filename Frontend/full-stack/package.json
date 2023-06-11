@@ -1,0 +1,41 @@
+{
+  "name": "kenzie-shoes-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.6.1",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@hookform/resolvers": "^2.9.10",
+    "@types/jest": "^29.2.4",
+    "@types/node": "^18.11.13",
+    "@types/react-router-dom": "^5.3.3",
+    "axios": "^1.2.0",
+    "framer-motion": "^7.10.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.40.0",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.4.5",
+    "react-toastify": "^9.1.1",
+    "styled-components": "^5.3.6",
+    "swiper": "^9.3.0",
+    "typescript": "^4.9.4",
+    "yup": "^0.32.11",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@types/styled-components": "^5.1.26",
+    "@vitejs/plugin-react": "^2.2.0",
+    "vite": "^3.2.3"
+  }
+}
