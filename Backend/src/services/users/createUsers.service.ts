@@ -10,9 +10,6 @@ import { hash } from "bcryptjs";
 
 const createUsersService = async (userData: TUserRequest): Promise<User> => {
   const userRepository: Repository<User> = AppDataSource.getRepository(User);
-  /*   const profileRepository: Repository<ProfileInformation> =
-    AppDataSource.getRepository(ProfileInformation); */
-
   const profileData = userData.profileInformations;
   delete userData.profileInformations;
 
@@ -20,12 +17,6 @@ const createUsersService = async (userData: TUserRequest): Promise<User> => {
 
   const user: User = userRepository.create(userData);
   await userRepository.save(user);
-
-  /*   const profile: ProfileInformation = profileRepository.create({
-    ...profileData,
-    user: user,
-  });
-  await profileRepository.save(profile); */
 
   return user;
 };

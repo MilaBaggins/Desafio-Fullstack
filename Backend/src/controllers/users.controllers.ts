@@ -17,9 +17,7 @@ const createUsersController = async (
   res: Response
 ): Promise<Response> => {
   const userData: TUserRequest = req.body;
-
   const newUser = await createUsersService(userData);
-
   return res.status(201).json(newUser);
 };
 

@@ -2,6 +2,7 @@ import {
   Column,
   CreateDateColumn,
   Entity,
+  JoinColumn,
   ManyToOne,
   PrimaryGeneratedColumn,
 } from "typeorm";
@@ -22,12 +23,13 @@ class Contact {
   img: string;
 
   @Column({ type: "int" })
-  phone: number;
+  phone: string;
 
   @CreateDateColumn()
   createdAt: Date | string;
 
   @ManyToOne(() => User)
+  @JoinColumn()
   user: User;
 }
 

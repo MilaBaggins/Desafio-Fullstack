@@ -9,7 +9,7 @@ import {
   OneToOne,
   OneToMany,
 } from "typeorm";
-import { Contact } from "./contacts.entity";
+import { Contact } from "./contact.entity";
 
 @Entity("users")
 class User {
