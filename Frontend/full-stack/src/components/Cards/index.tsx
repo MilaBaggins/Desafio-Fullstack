@@ -11,12 +11,12 @@ export const Card = () => {
         <div className="infos">
           <div>
             <div className="closeButton">
-              <h3 className="font-heading-3">Fulano</h3>
+              <p className="font-heading-3">Fulano</p>
               <button>x</button>
             </div>
 
-            <span className="caption">Empresa</span>
-            <p>Descrição</p>
+            <h4 className="caption">Empresa</h4>
+            <h3>Descrição</h3>
           </div>
           <div>
             <div>

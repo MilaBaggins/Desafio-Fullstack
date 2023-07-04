@@ -1,26 +1,59 @@
 import styled from "styled-components";
 export const StyledHome = styled.main`
-  background-image: url("https://w0.peakpx.com/wallpaper/656/711/HD-wallpaper-orbit-929-abstract-android-black-dark-grey-minimal-minimalist-simple.jpg");
-  background-repeat: repeat;
-
-  background-origin: content-box;
-  background-attachment: fixed;
-  background-position-x: center;
   max-width: 86rem;
   height: 400vh;
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 50px;
   display: flex;
   align-items: start;
-  justify-content: center;
+  justify-content: start;
+
+  .content {
+    margin-top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 20px;
+  }
 
   .cards {
     margin-top: 0px;
     display: flex;
-    justify-content: flex-start; /* 
-    background-color: red; */
-    width: 90%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: black;
+    min-height: 580px;
+    max-width: 65%;
     padding: 20px;
+    gap: 30px;
+  }
+
+  .addContac {
+    width: 30%;
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .img {
+      display: flex;
+      justify-content: flex-end;
+      background-color: orange;
+      height: 260px;
+      margin-top: 60px;
+      img {
+        width: 260px;
+      }
+    }
+  }
+  .registerContatc {
+    background-color: var(--color-gray-20);
+    border-radius: 4px;
+    padding: 10px;
+    color: var(--color-gray-100);
+    button {
+    }
   }
   > div {
     width: 80vw;

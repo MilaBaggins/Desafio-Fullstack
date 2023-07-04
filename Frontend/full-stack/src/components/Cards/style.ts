@@ -2,8 +2,18 @@ import styled from "styled-components";
 
 export const StyledCard = styled.main`
   height: 220px;
+  span {
+    color: var(--color-gray-0);
+  }
+  h3 {
+    color: var(--color-white);
+  }
+  h4 {
+    color: var(--color-primary);
+  }
+
   .card {
-    background-color: var(--color-white);
+    background-color: var(--color-gray-100);
     display: flex;
     height: 220px;
     width: 368px;
@@ -33,7 +43,7 @@ export const StyledCard = styled.main`
 
     button {
       font-weight: bolder;
-      color: var(--color-gray-100);
+      color: var(--color-white);
     }
   }
   .infos {
@@ -42,5 +52,9 @@ export const StyledCard = styled.main`
     justify-content: space-between;
     padding: 25px;
     width: 78%;
+
+    p {
+      color: var(--color-white);
+    }
   }
 `;
